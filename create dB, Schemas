@@ -1,3 +1,8 @@
+/*
+This code is to create new database: DataWarehouse, and three schemas namely Bronze, Silver and Gold.
+Running this code can result in deletion of previous data in the dB if it already exists.
+*/
+
 USE master;
 GO
 
@@ -8,12 +13,14 @@ BEGIN
 END;
 GO
 
+-- Database creation
 CREATE DATABASE DataWarehouse;
 GO
 
 USE DataWarehouse;
 GO
 
+-- Schema creation
 CREATE SCHEMA Bronze;
 GO
 
